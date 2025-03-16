@@ -1,29 +1,32 @@
 ---
-layout: 'intro'
+layout: intro
+transition: fade
+glowSeed: 15
+glowOpacity: 0.3
+class: pl-30
 ---
 
-# IlyaL
+# IlyaL {.font-mono}
 
-<div class="leading-8 opacity-80">
-VueUse, Maru.re 等項目的維護者<br>
-一年經驗的 Junior Frontend Engineer，任職於台北 AI 新創公司<br>
+<div class="[&>*]:important-leading-10 opacity-80">
+
+{VueUse} {maru} 團隊成員<br>
+是一年經驗的 Junior 前端工程師<br>
+任職於台北新創 AI 公司 {城智科技}<br>
+
 </div>
 
-<div my-10 w-min grid="~ cols-[40px_1fr] gap-y4" items-center justify-center>
-  <div i-ri-github-line op50 ma text-xl />
-  <div><a href="https://github.com/ilyaliao" target="_blank">ilyaliao</a></div>
-  <div i-ri-bluesky-fill op50 ma text-xl />
-  <div><a href="https://bsky.app/profile/ilyaliao.bsky.social" target="_blank">ilyaliao</a></div>
-  <div i-ri-twitter-x-line op50 ma text-xl />
-  <div><a href="https://x.com/ilyaliao" target="_blank">ilyaliao</a></div>
-  <div i-ri-threads-fill op50 ma text-xl />
-  <div><a href="https://www.threads.net/@liao.0324" target="_blank">liao.0324</a></div>
+<div v-click my-12 w-min flex="~ gap-1" items-center justify-center>
   <div i-ri-user-3-line op50 ma text-xl />
-  <div><a href="https://ilyal.me" target="_blank">ilyal.me</a></div>
+  <div><a href="https://ilyal.me" target="_blank" class="border-none! font-300">ilyal.me</a></div>
+  <div i-ri-github-line op50 ma text-xl ml4/>
+  <div><a href="https://github.com/ilyaliao" target="_blank" class="border-none! font-300">ilyaliao</a></div>
+  <div i-ri-bluesky-line op50 ma text-xl ml4/>
+  <div><a href="https://bsky.app/profile/ilyaliao.bsky.social" target="_blank" class="border-none! font-300">ilyaliao</a></div>
+  <div i-ri-twitter-x-line op50 ma text-xl ml4/>
+  <div><a href="https://x.com/ilyaliao" target="_blank" class="border-none! font-300">ilyaliao</a></div>
+  <div i-ri-threads-fill op50 ma text-xl ml4/>
+  <div><a href="https://www.threads.net/@liao.0324" target="_blank" class="border-none! font-300" ws-nowrap>liao.0324</a></div>
 </div>
 
-<img src="https://ilyal.me/avatar.png" rounded-full w-40 abs-tr mt-16 mr-12/>
-
-<div flex="~ gap2">
-
-</div>
+<img src="https://ilyal.me/avatar.png" absolute top-20 right-30 w-40 rounded-full />
