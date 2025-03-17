@@ -7,10 +7,11 @@
     "dev": "esno scripts/picker.ts dev --open",
     "typecheck": "vue-tsc --noEmit",
     "lint": "eslint .",
-    "update": "esno scripts/redirects.ts"
+    "github": "esno scripts/github.ts"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:cli",
+    "@clack/prompts": "catalog:cli",
     "@iconify/collections": "catalog:icon",
     "@iconify/json": "catalog:icon",
     "@slidev/cli": "catalog:slidev",
@@ -19,6 +20,8 @@
     "@types/node": "catalog:types",
     "@types/prompts": "catalog:types",
     "@types/seedrandom": "catalog:types",
+    "cac": "catalog:cli",
+    "consola": "catalog:cli",
     "eslint": "catalog:cli",
     "eslint-config-flat-gitignore": "catalog:cli",
     "eslint-plugin-format": "catalog:cli",
@@ -26,6 +29,7 @@
     "execa": "catalog:cli",
     "fast-glob": "catalog:cli",
     "markdown-it-magic-link": "catalog:slidev",
+    "ofetch": "catalog:cli",
     "playwright-chromium": "catalog:cli",
     "pnpm": "catalog:cli",
     "prettier-plugin-slidev": "catalog:slidev",
@@ -35,6 +39,7 @@
     "taze": "catalog:cli",
     "typescript": "catalog:cli",
     "unocss": "catalog:cli",
+    "vis-timeline": "catalog:vis",
     "vue-router": "catalog:vue",
     "vue-tsc": "catalog:vue"
   }

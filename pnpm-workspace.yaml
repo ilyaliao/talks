@@ -17,6 +17,10 @@ catalogs:
     taze: ^19.0.2
     typescript: ^5.8.2
     unocss: ^66.0.0
+    ofetch: ^1.4.1
+    consola: ^3.4.0
+    cac: ^6.7.14
+    '@clack/prompts': ^0.10.0
   icon:
     '@iconify/collections': ^1.0.528
     '@iconify/json': ^2.2.317
@@ -33,6 +37,8 @@ catalogs:
   vue:
     vue-router: ^4.5.0
     vue-tsc: ^2.2.8
+  vis:
+    'vis-timeline': ^7.7.3
 ignoredBuiltDependencies:
   - esbuild
   - playwright-chromium
