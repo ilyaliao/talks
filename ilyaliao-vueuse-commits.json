@@ -1,0 +1,158 @@
+[
+  {
+    "date": "2025-03-05T04:07:46Z",
+    "message": "feat(types): deprecate `MaybeRef` and `MaybeRefOrGetter` in favor of Vue's native (#4636)\n\nCo-authored-by: Anthony Fu <github@antfu.me>",
+    "sha": "7432fd1d4f47613a26e9286d2723b87eebfb30f3",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2025-03-05T04:00:44Z",
+    "message": "fix(useCssVar): update `variable` when initial (#4641)",
+    "sha": "d680f1f9c3509bf5ad730f0a392ee0bbdad5a766",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2025-03-05T03:58:19Z",
+    "message": "fix(useScroll): handle negative scroll values (#4613)\n\nCo-authored-by: eavlee <eavlee@users.noreply.github.com>",
+    "sha": "4b7ab552157b512fb93c0773e79c21634e565575",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2025-02-16T11:36:01Z",
+    "message": "docs: update `demo` and `document` to use `shallowRef` (#4600)",
+    "sha": "8c66781c6c04bfaf02ffef1268d643762e4db1af",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2025-02-16T10:21:44Z",
+    "message": "refactor: Change `primitive` and `element` to `shallowRef`, update some return types. (#4599)",
+    "sha": "4feb118e8e924df815d6d7a4dcb00d375a95f9c9",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2025-02-15T09:08:37Z",
+    "message": "fix(useTextareaAutosize): improve resize handling with requestAnimationFrame (#4557)\n\nCo-authored-by: Robin <37191683+OrbisK@users.noreply.github.com>\nCo-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>\nCo-authored-by: Anthony Fu <github@antfu.me>",
+    "sha": "e1a7ef389ad0c36f5c13a6502aa2297d1e5a4b6a",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2025-02-15T06:06:14Z",
+    "message": "refactor: replace `tryOnBeforeUnmount` with `tryOnScopeDispose` (#4584)",
+    "sha": "4c233b09086d1fa33dcc6262530e48e8e37ba736",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2025-02-14T04:12:47Z",
+    "message": "feat(useElementVisibility): add `once` options (#4577)",
+    "sha": "f2f94bf9b801d71271403acee3f085d0c7651977",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2025-02-12T03:27:27Z",
+    "message": "fix(useCssVar): new Behavior (#4500)\n\nCo-authored-by: OrbisK <37191683+OrbisK@users.noreply.github.com>",
+    "sha": "d5dd8fdad71fbe5d6f25039bd74bc14b596c4c3e",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2025-02-12T02:26:45Z",
+    "message": "feat(useTimtoutFn,useTimeoutPoll): align behavior (#4543)",
+    "sha": "64c533fafdd8812b90921fb85c53ae9dbf0a50d8",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2025-02-07T01:47:00Z",
+    "message": "fix(useSpeechRecognition): improve start and stop method behavior (#4565)",
+    "sha": "4f104263d1b1923b8a897b1bbb3a07a1f9551941",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2025-01-22T07:52:21Z",
+    "message": "refactor: use `useTemplateRef` instead of `ref` in demos and docs (#4482)",
+    "sha": "d08eb2c8ad17c01b77d49a01de13009553ccf624",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2025-01-10T07:14:58Z",
+    "message": "fix(useBluetooth): isConnected state not changed when disconnected (#4460)\n\nCo-authored-by: Anthony Fu <github@antfu.me>\nCo-authored-by: Fernando Fernández <ferferga@hotmail.com>",
+    "sha": "fcc6e7176c87e5bd728f0078002194aafb72da0e",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2024-12-23T05:47:14Z",
+    "message": "fix(useWebSocket): clear retryTimer when connected (#4383)\n\nCo-authored-by: Anthony Fu <anthonyfu117@hotmail.com>\nCo-authored-by: Anthony Fu <github@antfu.me>",
+    "sha": "ffa00d25be6d6ffe54644ff205dd72b0e978e603",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2024-12-22T05:39:13Z",
+    "message": "fix(useFetch): handle empty payload (#4366)",
+    "sha": "8a89dcc75cbf36f8fee08bab5da80f5f4c3de795",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2024-12-22T04:25:10Z",
+    "message": "feat(useWebSocket): introduce `autoConnect` options to control auto connections on url changes (#4417)\n\nCo-authored-by: Anthony Fu <github@antfu.me>",
+    "sha": "05e7567310f4205df8fd111675a211ae5e5049ea",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2024-12-22T03:31:21Z",
+    "message": "feat(createEventHook): add `clear` function (#4378)",
+    "sha": "40265baf73290f98100b4a0bc3b58c2c04d061ef",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2024-12-19T08:24:45Z",
+    "message": "feat(useBase64): add options for Data URL output control (#4316)\n\nCo-authored-by: Jelf <353742991@qq.com>",
+    "sha": "4b4bdc07281bc75d92d81a5776577eba1e34600e",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2024-11-21T08:14:41Z",
+    "message": "docs(useUserMedia): fix examples (#4322)\n\nCo-authored-by: Anthony Fu <github@antfu.me>",
+    "sha": "1d5e978d7344d30dc713faad3edcc8943073c907",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2024-11-21T08:05:45Z",
+    "message": "feat(OnClickOutside): support component with fragments (#4313)",
+    "sha": "fe322bd9655a506b8c6079335ee283b98cedc59c",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2024-11-21T08:04:25Z",
+    "message": "fix(useSortable): wrong order of elements (#4332)",
+    "sha": "9e78eda0be241e9983142f8f16090a0e913a77b2",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2024-11-21T08:03:24Z",
+    "message": "fix(useSwipe): allow vertical scrolling during swipe (#4323)",
+    "sha": "1bb547e0d6490c8e15553372bdc29ca58f4b8113",
+    "author": "IlyaL"
+  },
+  {
+    "date": "2024-10-30T18:54:38Z",
+    "message": "fix(useWebSocket): autoreconnect when ws close (#4314)",
+    "sha": "08412e8c45ff473424e79125c7325a50c53f78fe",
+    "author": "Jack Liao"
+  },
+  {
+    "date": "2024-10-28T03:37:37Z",
+    "message": "fix(useDropZone): remove file kind restriction (#4305)",
+    "sha": "1d661f9d51db53f1c3513af8fd3d8618ea030372",
+    "author": "CofCat"
+  },
+  {
+    "date": "2024-10-24T16:29:53Z",
+    "message": "docs(useIDBKeyval): avoid RangeError error (#4284)",
+    "sha": "277ede82406d5848de0cdbe40564290888425dcf",
+    "author": "CofCat"
+  },
+  {
+    "date": "2024-07-13T10:20:44Z",
+    "message": "docs: improve the team member layout style (#4096)",
+    "sha": "67d049aa0760e898d3b48b27c1dd4e757de31acb",
+    "author": "CofCat"
+  }
+]

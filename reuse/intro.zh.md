@@ -12,7 +12,7 @@ class: pl-30
 
 {VueUse} {maru} 團隊成員<br>
 是一年經驗的 Junior 前端工程師<br>
-任職於台北新創 AI 公司 {城智科技}<br>
+任職於台北新創 AI 公司<br>
 
 </div>
 
@@ -30,3 +30,9 @@ class: pl-30
 </div>
 
 <img src="https://ilyal.me/avatar.png" absolute top-20 right-30 w-40 rounded-full />
+
+<!--
+跟大家自我介紹一下
+
+[click] 歡迎大家發瞜我的社群帳號以及 Github
+-->

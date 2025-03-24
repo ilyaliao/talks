@@ -5,7 +5,8 @@
     "moduleResolution": "node",
     "allowImportingTsExtensions": true,
     "noEmit": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
   },
   "exclude": [
     "**/*.md"

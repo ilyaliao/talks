@@ -4,7 +4,7 @@
   "packageManager": "pnpm@10.6.3",
   "scripts": {
     "build": "rimraf dist && pnpm -r run build",
-    "dev": "esno scripts/picker.ts dev --open",
+    "dev": "esno scripts/picker.ts dev",
     "typecheck": "vue-tsc --noEmit",
     "lint": "eslint .",
     "github": "esno scripts/github.ts"
