@@ -1,0 +1,93 @@
+[
+  {
+    "date": "2024-12-21T01:56:21Z",
+    "message": "feat(useWebSocket): introduce `autoConnect` options to control auto connections on url changes",
+    "number": 4417,
+    "author": "ilyaliao",
+    "state": "closed"
+  },
+  {
+    "date": "2024-12-05T01:13:01Z",
+    "message": "fix(useWebSocket): clear retryTimer when connected",
+    "number": 4383,
+    "author": "ilyaliao",
+    "state": "closed"
+  },
+  {
+    "date": "2024-11-29T13:38:17Z",
+    "message": "feat(createEventHook): add `clear` function",
+    "number": 4378,
+    "author": "ilyaliao",
+    "state": "closed"
+  },
+  {
+    "date": "2024-11-27T13:11:10Z",
+    "message": "fix(useFetch): handle empty payload",
+    "number": 4366,
+    "author": "ilyaliao",
+    "state": "closed"
+  },
+  {
+    "date": "2024-11-09T03:59:07Z",
+    "message": "fix(useSortable): wrong order of elements",
+    "number": 4332,
+    "author": "ilyaliao",
+    "state": "closed"
+  },
+  {
+    "date": "2024-11-04T15:00:28Z",
+    "message": "fix(useSwipe): allow vertical scrolling during swipe",
+    "number": 4323,
+    "author": "ilyaliao",
+    "state": "closed"
+  },
+  {
+    "date": "2024-11-04T14:29:03Z",
+    "message": "docs(useUserMedia): fix examples",
+    "number": 4322,
+    "author": "ilyaliao",
+    "state": "closed"
+  },
+  {
+    "date": "2024-11-03T06:07:18Z",
+    "message": "fix(useMouse): prevent double counting scroll offset when using pageX/Y",
+    "number": 4320,
+    "author": "ilyaliao",
+    "state": "closed"
+  },
+  {
+    "date": "2024-10-30T20:37:19Z",
+    "message": "feat(useBase64): add options for Data URL output control",
+    "number": 4316,
+    "author": "ilyaliao",
+    "state": "closed"
+  },
+  {
+    "date": "2024-10-29T19:54:00Z",
+    "message": "fix(useWebSocket): autoreconnect when ws close",
+    "number": 4314,
+    "author": "ilyaliao",
+    "state": "closed"
+  },
+  {
+    "date": "2024-10-29T18:53:24Z",
+    "message": "feat(OnClickOutside): support component with fragments",
+    "number": 4313,
+    "author": "ilyaliao",
+    "state": "closed"
+  },
+  {
+    "date": "2024-10-26T02:49:07Z",
+    "message": "fix(useDropZone): remove file kind restriction",
+    "number": 4305,
+    "author": "ilyaliao",
+    "state": "closed"
+  },
+  {
+    "date": "2024-10-17T10:31:39Z",
+    "message": "fix(useIDBKeyval): avoid RangeError error",
+    "number": 4284,
+    "author": "ilyaliao",
+    "state": "closed"
+  }
+]
