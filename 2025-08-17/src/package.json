@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --base /2025/tbc-vueuse-magic/ --out ../../dist/2025/tbc-vueuse-magic",
+    "build": "slidev build --base /2025-08-17-tbc-vueuse-magic/ --out ../../dist/2025-08-17-tbc-vueuse-magic",
     "export": "slidev export --per-slide --output ../2025-08-17-tbc-vueuse-magic.pdf"
   },
   "devDependencies": {
