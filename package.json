@@ -17,6 +17,7 @@
     "@iconify/json": "^2.2.373",
     "@slidev/cli": "^52.1.0",
     "@slidev/client": "^52.1.0",
+    "@slidev/parser": "^52.1.0",
     "@slidev/theme-default": "^0.25.0",
     "@types/node": "^20.19.11",
     "@types/prompts": "^2.4.9",
