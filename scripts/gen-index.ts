@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { load } from '@slidev/parser/fs'
 
 const root = new URL('..', import.meta.url)
 const rootPath = fileURLToPath(root)
@@ -14,10 +15,12 @@ const folders = (await fs.readdir(rootPath, { withFileTypes: true }))
 // Extract title and dist folder name from each talk
 const talks = await Promise.all(folders.map(async (f) => {
   // Get title from slides.md frontmatter
-  const slidesPath = path.join(rootPath, f.name, 'src', 'slides.md')
+  const userRoot = path.join(rootPath, f.name, 'src')
+  const slidesPath = path.join(userRoot, 'slides.md')
   const content = await fs.readFile(slidesPath, 'utf-8')
   const titleMatch = content.match(/^title:\s*(.+)/m)
   const title = titleMatch?.[1]?.trim() || f.name
+  const { slides } = await load(userRoot, slidesPath)
 
   // Get dist folder name from package.json --out flag
   const pkgPath = path.join(rootPath, f.name, 'src', 'package.json')
@@ -26,7 +29,7 @@ const talks = await Promise.all(folders.map(async (f) => {
   const outFlag = buildScript.split('--out')[1]?.trim() || ''
   const distName = outFlag.split('/').pop() || f.name
 
-  return { folder: f.name, distName, title }
+  return { folder: f.name, distName, title, slideCount: slides.length }
 }))
 
 // Generate index.html
@@ -90,10 +93,33 @@ const html = `<!DOCTYPE html>
 await fs.mkdir(distDir, { recursive: true })
 await fs.writeFile(path.join(distDir, 'index.html'), html)
 
-// Generate _redirects for SPA fallback
-const redirects = talks
-  .map(t => `/${t.distName}/*    /${t.distName}/index.html   200`)
-  .join('\n')
-await fs.writeFile(path.join(distDir, '_redirects'), `${redirects}\n`)
+const staticRoutes = [
+  'entry',
+  'overview',
+  'notes',
+  'presenter',
+  'print',
+  'presenter/print',
+  'export',
+]
 
-console.log(`Generated index.html and _redirects for ${talks.length} talks`)
+let shells = 0
+for (const talk of talks) {
+  const deckDir = path.join(distDir, talk.distName)
+  const shell = path.join(deckDir, 'index.html')
+  const routes = [
+    ...staticRoutes,
+    ...Array.from({ length: talk.slideCount }, (_, i) => {
+      const no = String(i + 1)
+      return [no, `presenter/${no}`, `export/${no}`]
+    }).flat(),
+  ]
+  for (const route of routes) {
+    const dest = path.join(deckDir, `${route}.html`)
+    await fs.mkdir(path.dirname(dest), { recursive: true })
+    await fs.copyFile(shell, dest)
+    shells++
+  }
+}
+
+console.log(`Generated index.html and ${shells} slide shells for ${talks.length} talks`)
